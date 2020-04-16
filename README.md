@@ -1,5 +1,3 @@
-[![](https://jitci.com/gh/IgorGanapolsky/SeekArc/svg)](https://jitci.com/gh/IgorGanapolsky/SeekArc)
-
 SeekArc
 =======
 
@@ -62,7 +60,7 @@ Now add a library dependency (remember to check for latest release)
 
 ```groovy
     dependencies {
-        implementation 'com.github.IgorGanapolsky:SeekArc:v1.2.1'
+        implementation 'com.github.yonniton:SeekArc'
     }
 ```
 

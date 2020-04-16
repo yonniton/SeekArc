@@ -44,7 +44,7 @@ import kotlin.math.*
  *
  * @author Neil Davies
  */
-class SeekArc : View {
+open class SeekArc : View {
 
     /**
      * The Drawable for the seek arc thumbnail
@@ -54,7 +54,7 @@ class SeekArc : View {
     /**
      * The Maximum value that this SeekArc can be set to
      */
-    private var max = 100
+    var max = 100
 
     /**
      * The Current value that the SeekArc is set to
