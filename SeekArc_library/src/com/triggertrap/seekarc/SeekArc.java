@@ -1,19 +1,19 @@
 /*******************************************************************************
  * The MIT License (MIT)
- * 
+ *
  * Copyright (c) 2013 Triggertrap Ltd
  * Author Neil Davies
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
  * the Software without restriction, including without limitation the rights to
  * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
  * the Software, and to permit persons to whom the Software is furnished to do so,
  * subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
@@ -139,7 +139,7 @@ public class SeekArc extends View {
 		 * @param progress
 		 *            The current progress level. This will be in the range
 		 *            0..max where max was set by
-		 *            {@link ProgressArc#setMax(int)}. (The default value for
+		 *            {@link SeekArc#setMax(int)}. (The default value for
 		 *            max is 100.)
 		 * @param fromUser
 		 *            True if the progress change was initiated by the user.
@@ -214,7 +214,7 @@ public class SeekArc extends View {
 					thumbHalfheight);
 
 			mMax = a.getInteger(R.styleable.SeekArc_max, mMax);
-			mProgress = a.getInteger(R.styleable.SeekArc_progress, mProgress);
+			mProgress = a.getInteger(R.styleable.SeekArc_progressValue, mProgress);
 			mProgressWidth = (int) a.getDimension(
 					R.styleable.SeekArc_progressWidth, mProgressWidth);
 			mArcWidth = (int) a.getDimension(R.styleable.SeekArc_arcWidth,
@@ -458,9 +458,9 @@ public class SeekArc extends View {
 	 * stops a touch gesture within the SeekArc.
 	 * 
 	 * @param l
-	 *            The seek bar notification listener
+	 *            The SeekArc notification listener
 	 * 
-	 * @see SeekArc.OnSeekBarChangeListener
+	 * @see SeekArc.OnSeekArcChangeListener
 	 */
 	public void setOnSeekArcChangeListener(OnSeekArcChangeListener l) {
 		mOnSeekArcChangeListener = l;
